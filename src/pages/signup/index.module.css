@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    white-space: nowrap;
+}
+
+h2 {
+    text-align: center;
+    font-size: 40px;
+}
+
+body {
+    /* background-color: #C5D5A4; */
+    margin-top: 0;
+}
+
+form {
+    border: none;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+label {
+    font-size: 23px;
+    margin-left: 31%;
+}
+
+
+.container div {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs {
+    width: 40%;
+    height: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.099);
+    border-radius: 20px;
+    box-shadow: 20px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.formbtns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.formlogin {
+    width: 752px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    color: black;
+}
+
+.imgwrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.imgwrapper img {
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+
+
+.container a {
+    text-decoration: none;
+    color: black;
+}
+
+.formsignup {
+    width: 752px;
+    height: 40px;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    background-color: #3182CE;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}

@@ -1,0 +1,328 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
+
+.headside {
+    display: flex;
+    flex-direction: row;
+    padding: 25px;
+    gap: 40px;
+    text-align: center;
+    align-items: center;
+    background-color: #fcedcd;
+}
+
+.taco {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    gap: 20px;
+}
+
+.name img {
+    border: none;
+    border-radius: 50%;
+}
+
+.navside span {
+    white-space: nowrap;
+}
+
+.navside {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    color: rgb(109, 120, 125);
+}
+
+.navside a {
+    text-decoration: none;
+    color: rgb(109, 120, 125);
+}
+
+.btns {
+    display: flex;
+    gap: 15px;
+    flex-direction: row;
+    justify-content: end;
+    margin-left: 50%;
+}
+
+.card1 p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.loginbtn {
+    padding: 10px;
+    border: none;
+    background-color: white;
+    color: #95A6BD;
+    font-size: 16px;
+    width: 265px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.signupbtn a {
+    text-decoration: none;
+    color: white;
+}
+
+.footerlogo {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.startbtn a {
+    text-decoration: none;
+    color: white;
+}
+
+/* .card1 img{
+    width: 231px;
+    height: 130px;
+} */
+
+.loginbtn a {
+    text-decoration: none;
+    color: #95A6BD;
+}
+
+.signupbtn {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #233345;
+    color: white;
+    font-size: 14px;
+    width: 80px;
+    height: 40px;
+}
+
+.phrase {
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-image: url(https://img.freepik.com/free-photo/food-frame-with-asian-dish_23-2148242505.jpg?semt=ais_hybrid&w=740;);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 700px;
+}
+
+.cook {
+    font-size: 30px;
+}
+
+.startbtn {
+    border: none;
+    border-radius: 20px;
+    color: white;
+    background-color: #233345;
+    width: 238px;
+    height: 40px;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px
+}
+
+.imgcontainer {
+    margin-top: 70px;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+    grid-template-rows: repeat(2, 200px);
+}
+
+/* .imgcontainer img{
+    width: 231px;
+    height: 130px;
+} */
+
+.card1 {
+    transition: transform 0.3s ease;
+}
+
+.scrollink {
+    cursor: pointer;
+}
+
+.card1:hover {
+    transform: scale(1.1);
+}
+
+.cardstyle {
+    display: flex;
+    flex-direction: row;
+    background-color: #fdf6ec;
+}
+
+.cardwrites {
+    margin-top: 225px;
+    margin-bottom: 0;
+}
+
+.write1 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.write2 {
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.write3 {
+    text-align: center;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.imgcontainer2 {
+    margin-top: 70px;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: repeat(2, 200px);
+    /* float: right; */
+    order: 2;
+    margin-right: 200px;
+}
+
+.imgcontainer2 img {
+    width: auto;
+    height: 130px;
+}
+
+.cardwrites2 {
+    margin-top: 225px;
+    order: 1;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 120px;
+    margin-bottom: 0;
+}
+
+.cardstyle2 {
+    display: flex;
+    flex-direction: row;
+    background-color: #FFFF;
+    gap: 200px;
+}
+
+.mapside {
+    margin-top: 0;
+    padding-top: 20px;
+    padding: 30px;
+    text-align: center;
+    background-color: #fcedcd;
+}
+
+.mapside img {
+    margin-top: 50px;
+}
+
+.mapside p {
+    color: #1A202C;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.mapstartbtn {
+    border: none;
+    background-color: #233345;
+    border-radius: 20px;
+    color: white;
+    width: 239px;
+    height: 40px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px
+}
+
+.hellofinal {
+    background-color: #233345;
+    padding-top: 30px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.hellofinal h2 {
+    text-align: start;
+    margin-left: 50px;
+}
+
+.yearofcreation {
+    text-align: start;
+    margin-left: 50px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact p {
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.snacks {
+    width: 231px;
+    height: 130px;
+}
+
+.receipesbtn {
+    border: none;
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    font-weight: 400;
+    font-size: 20px;
+    width: 239px;
+    height: 40px;
+}
+
+.mapside a {
+    text-decoration: none;
+    color: white;
+}
+
+.receipesbtn a {
+    text-decoration: none;
+    color: black;
+}

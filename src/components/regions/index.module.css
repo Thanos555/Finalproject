@@ -1,0 +1,120 @@
+.areaButtons {
+    display: grid;
+    grid-template-columns: repeat(10, 180px);
+    grid-template-rows: repeat(3, 50px);
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+    gap: 10px;
+    margin-top: 30px;
+    padding-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 15px;
+}
+
+.foto1 {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.box:hover {
+    transform: scale(1.07);
+}
+
+.box {
+    padding: 10px 15px;
+    background: rgba(211, 211, 211, 0.419);
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 20px;
+    font-style: bold;
+    transition: transform 0.9s ease;
+}
+
+.box:hover {
+    background-color: #ffb07c;
+}
+
+.mealsContainer {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 20px;
+    margin-right: 20px;
+    flex-wrap: wrap;
+    gap: 30px;
+
+}
+
+.recepielink {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    font-size: 25px;
+    font-weight: 600;
+    font-style: italic;
+
+}
+
+.recepbtn {
+    padding: 20px;
+    border-radius: 25px;
+    border: none;
+    color: aliceblue;
+    background-color: #ffb07c;
+    font-size: 20px;
+    font-weight: 500;
+    font-style: italic;
+    margin-left: 50px;
+}
+
+.recepielink a {
+    color: black;
+    text-decoration: none;
+}
+
+.mealCard h3 {
+    font-size: 16px;
+    /* margin-top: 10%; */
+    white-space: normal;
+    word-wrap: break-word;
+    word-break: break-word;
+    overflow: visible;
+    margin: 0;
+    white-space: normal;
+    list-style: none;
+    /* margin: 0; */
+    padding: 0;
+    background-color: white;
+
+}
+
+.mealCard {
+    width: 200px;
+    height: auto;
+    text-align: center;
+    transition: transform 0.9s ease;
+    text-decoration: none;
+    color: black;
+    border: 3px solid white;
+    background-color: white;
+    padding: 10px;
+    border-radius: 15px;
+    word-wrap: break-word;
+    flex: 1 1 250px;
+}
+
+.mealCard:hover {
+    transform: scale(1.15)
+}
+
+.mealCard img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    border-radius: 20px;
+}

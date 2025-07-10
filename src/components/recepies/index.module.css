@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.search1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.search1 input {
+    border-radius: 25px;
+    border: 1px solid rgba(175, 238, 238, 0.305);
+    width: 71%;
+    height: 40px;
+}
+
+.search1 button {
+    border: none;
+    border-radius: 25px;
+    padding: 15px;
+    width: 150px;
+    background-color: #ffb07c;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+input {
+    padding-left: 20px;
+}
+
+.foodsearch {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-style: italic;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+input::placeholder {
+    color: #999;
+    font-style: italic;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    padding-left: 30px;
+    padding: 15px;
+}
+
+.logocard img {
+    border-radius: 50%;
+}
+
+.logocard {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.cardmeal {
+    text-decoration: none;
+    color: inherit;
+    /* margin-left: 30px; */
+    border: 3px solid white;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.9s ease;
+}
+
+.full{
+    padding-bottom: 5%;
+}
+
+.cardmeal:hover {
+    transform: scale(1.09);
+}
+
+
+.noresult {
+    font-size: 30px;
+    font-weight: 700;
+    /* text-align: center; */
+    margin-left: 50%;
+}
+
+.cardmeal img {
+    border-radius: 15%;
+}
+
+.cardmeal h3 {
+    margin-left: 10px;
+    /* text-decoration: none; */
+    color: black;
+}
+
+.foods {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(5, 300px);
+    grid-template-rows: repeat(5, 300px);
+    gap: 20px;
+    margin-top: 20px;
+}
