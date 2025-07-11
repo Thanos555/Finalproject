@@ -1,8 +1,39 @@
+.foodimg {
+    border-radius: 15%;
+    margin-bottom: 3%;
+}
+
+.category {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 1%;
+}
+
+.area {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 1%;
+}
+
+
 .ingredients {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 1%;
+    margin-left: 2%;
+}
+
+.instructions1 {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 1%;
+    margin-left: 2%;
+}
+
+.instructions {
     white-space: normal;
     word-wrap: break-word;
-    width: 100%;
-
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 3%;
 }
-  
-  

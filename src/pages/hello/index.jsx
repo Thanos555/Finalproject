@@ -56,7 +56,7 @@ const Hello = () => {
                         <p>Fig & chickpeas salad</p>
                     </div>
                     <div className={styles.card1}>
-                        <img src={logo5} alt="" width='310px' height='130px'/>
+                        <img src={logo5} alt=""/>
                         <p>Yogurt with mixed fruits</p>
                     </div>
                 </div>
@@ -69,24 +69,18 @@ const Hello = () => {
             <div className={styles.cardstyle2}>
                 <div className={styles.imgcontainer2}>
                     <div className={styles.card1}>
-                        <img src={logo6} alt=""
-                            width={'231px'}
-                            height={'130px'} />
+                        <img src={logo6} alt=""/>
                         <p>Pasta with tomato</p>
                     </div>
                     <div className={styles.card1}>
-                        <img className={styles.snacks} src={logo7} alt=""
-                            width={'231px'}
-                            height={'130px'} />
+                        <img className={styles.snacks} src={logo7} alt=""/>
                         <p>Healthy snacks</p></div>
                     <div className={styles.card1}>
                         <img src={logo8} alt="" />
                         <p>Ratatuelle</p>
                     </div>
                     <div className={styles.card1}>
-                        <img src={logo9} alt=""
-                            width={'231px'}
-                            height={'130px'} />
+                        <img src={logo9} alt=""/>
                         <p>Baked chicken with vegetables</p>
                     </div>
                 </div>
