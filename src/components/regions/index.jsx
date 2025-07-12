@@ -75,7 +75,7 @@ const Regions = () => {
             <div className={style.mealsContainer}>
                 {results.map(meal => (
                     <div key={meal.idMeal} className={style.mealCard}>
-                            <Link to={`/recipe/${meal.idMeal}`} key={meal.idMeal} className={style.mealCard}>
+                            <Link to={`/recipe/${meal.idMeal}`} key={meal.idMeal} className={style.mealCard1}>
                                 <img src={meal.strMealThumb} alt={meal.strMeal} width="254px" />
                                 <br />
                                 <h3>{meal.strMeal}</h3>

@@ -80,6 +80,14 @@
     box-sizing: border-box;
 }
 
+ a {
+    text-decoration: none;
+}
+
+.mealCard1{
+    color: black;
+}
+
 .mealCard:hover {
     transform: scale(1.15);
 }
