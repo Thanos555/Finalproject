@@ -56,31 +56,31 @@ const Hello = () => {
                         <p>Fig & chickpeas salad</p>
                     </div>
                     <div className={styles.card1}>
-                        <img src={logo5} alt=""/>
+                        <img src={logo5} alt="" />
                         <p>Yogurt with mixed fruits</p>
                     </div>
                 </div>
                 <span className={styles.cardwrites}>
-                    <p className={styles.write1}><b>Get Daily Inspiration with Balanced Recipes: Quick and Easy Delights!</b></p>
-                    <p className={styles.write2}>Our quick and easy recipes are always on the table in no time! All recipes are approved by our expert chef team, providing</p>
-                    <p className={styles.write3}>you with a healthy and balanced culinary experience.</p>
+                    <p className={styles.write1}><b>Get Daily Inspiration with Balanced Recipes:Quick and Easy Delights</b></p>
+                    <p className={styles.write2}>Our quick and easy recipes are always on the table in no time! All recipes are approved </p>
+                    <p className={styles.write3}>by our expert chef team, providing you with a healthy and balanced culinary experience.</p>
                 </span>
             </div>
             <div className={styles.cardstyle2}>
                 <div className={styles.imgcontainer2}>
                     <div className={styles.card1}>
-                        <img src={logo6} alt=""/>
+                        <img src={logo6} alt="" />
                         <p>Pasta with tomato</p>
                     </div>
                     <div className={styles.card1}>
-                        <img className={styles.snacks} src={logo7} alt=""/>
+                        <img className={styles.snacks} src={logo7} alt="" />
                         <p>Healthy snacks</p></div>
                     <div className={styles.card1}>
                         <img src={logo8} alt="" />
                         <p>Ratatuelle</p>
                     </div>
                     <div className={styles.card1}>
-                        <img src={logo9} alt=""/>
+                        <img src={logo9} alt="" />
                         <p>Baked chicken with vegetables</p>
                     </div>
                 </div>

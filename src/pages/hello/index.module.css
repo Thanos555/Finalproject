@@ -332,7 +332,7 @@ body {
 }
 
 
-@media (max-width: 1600px) {
+@media (max-width: 1700px) {
     .headside {
         padding: 15px;
         gap: 20px;
@@ -371,6 +371,8 @@ body {
         padding: 30px 15px;
         height: auto;
         background-size: cover;
+        background-position: center;
+        height: 400px;
     }
 
     .cook {
@@ -389,6 +391,15 @@ body {
         padding: 15px;
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    .imgcontainer {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(280px));
+        grid-template-rows: repeat(2, minmax(280px));
+        gap: 15px;
+        padding: 20px;
+        margin-top: 30px;
     }
 
     .imgcontainer,
@@ -418,7 +429,7 @@ body {
     }
 
     .write1 {
-        font-size: 13px;
+        font-size: 10px;
     }
 
     .write2,
@@ -431,9 +442,11 @@ body {
         height: auto;
         margin-top: 30px;
     }
- .mapside h2{
-    font-size: 17px;
- }
+
+    .mapside h2 {
+        font-size: 17px;
+    }
+
     .mapside p {
         font-size: 10px;
     }
