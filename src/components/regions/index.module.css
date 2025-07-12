@@ -1,28 +1,17 @@
 .areaButtons {
     display: grid;
-    grid-template-columns: repeat(10, 180px);
-    grid-template-rows: repeat(3, 50px);
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-auto-rows: 50px;
+    gap: 10px;
+    margin: 30px 15px 20px 10px;
     text-align: center;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-bottom: 20px;
-    gap: 10px;
-    margin-top: 30px;
-    padding-bottom: 20px;
-    margin-left: 10px;
-    margin-right: 15px;
 }
 
 .foto1 {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    margin-top: 20px;
-    margin-bottom: 30px;
-}
-
-.box:hover {
-    transform: scale(1.07);
+    margin: 20px 0 30px 0;
 }
 
 .box {
@@ -32,22 +21,21 @@
     cursor: pointer;
     font-weight: 400;
     font-size: 20px;
-    font-style: bold;
-    transition: transform 0.9s ease;
+    font-style: normal;
+    transition: transform 0.9s ease, background-color 0.3s ease;
 }
 
 .box:hover {
     background-color: #ffb07c;
+    transform: scale(1.07);
 }
 
 .mealsContainer {
     display: flex;
     justify-content: space-around;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 0 20px;
     flex-wrap: wrap;
     gap: 30px;
-
 }
 
 .recepielink {
@@ -57,7 +45,6 @@
     font-size: 25px;
     font-weight: 600;
     font-style: italic;
-
 }
 
 .recepbtn {
@@ -77,22 +64,6 @@
     text-decoration: none;
 }
 
-.mealCard h3 {
-    font-size: 16px;
-    /* margin-top: 10%; */
-    white-space: normal;
-    word-wrap: break-word;
-    word-break: break-word;
-    overflow: visible;
-    margin: 0;
-    white-space: normal;
-    list-style: none;
-    /* margin: 0; */
-    padding: 0;
-    background-color: white;
-
-}
-
 .mealCard {
     width: 200px;
     height: auto;
@@ -105,11 +76,12 @@
     padding: 10px;
     border-radius: 15px;
     word-wrap: break-word;
-    flex: 1 1 250px;
+    flex: 1 1 200px;
+    box-sizing: border-box;
 }
 
 .mealCard:hover {
-    transform: scale(1.15)
+    transform: scale(1.15);
 }
 
 .mealCard img {
@@ -117,4 +89,45 @@
     margin: 0 auto;
     width: 100%;
     border-radius: 20px;
+}
+
+.mealCard h3 {
+    font-size: 16px;
+    margin: 0;
+    white-space: normal;
+    word-wrap: break-word;
+    word-break: break-word;
+    background-color: white;
+}
+
+/* Адаптив для экранов <= 768px */
+@media (max-width: 768px) {
+    .areaButtons {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        grid-auto-rows: auto;
+    }
+
+    .mealCard {
+        width: 100%;
+        max-width: 300px;
+        flex: 1 1 100%;
+        margin: 0 auto;
+    }
+
+    .mealsContainer {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .recepielink {
+        flex-direction: column;
+        gap: 20px;
+        font-size: 20px;
+    }
+
+    .recepbtn {
+        margin-left: 0;
+        width: 50%;
+        max-width: 300px;
+    }
 }

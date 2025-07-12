@@ -100,3 +100,51 @@ label {
     margin-bottom: 20px;
     margin-top: 40px;
 }
+
+@media (max-width: 768px) {
+    label {
+        font-size: 18px;
+        margin-left: 10%;
+    }
+
+    .inputs {
+        width: 80%;
+        height: 36px;
+    }
+
+    .formlogin,
+    .formsignup {
+        width: 80%;
+        font-size: 16px;
+        height: 38px;
+    }
+
+    h2{
+        font-size: 22px;
+    }
+
+    .formbtns {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .imgwrapper {
+        margin-top: 40px;
+    }
+
+    .imgwrapper img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .inputs {
+        width: 60%;
+    }
+
+    .formlogin,
+    .formsignup {
+        width: 60%;
+    }
+}

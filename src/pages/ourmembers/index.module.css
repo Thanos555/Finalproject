@@ -12,6 +12,7 @@ body {
     text-align: center;
     font-style: italic;
     font-size: 50px;
+    margin-top: 20px;
 }
 
 .chefs {
@@ -29,50 +30,84 @@ body {
     border-radius: 50%;
 }
 
-.cards {
-    border-radius: 55px;
-    transition: transform 0.9s ease;
-    background-color: #1f3f47;
-    width: 400px;
-    height: 90%;
-    margin-left: 15%;
+.images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    justify-content: center;
+    text-align: center;
+    margin: 100px 20px 50px 20px;
 }
 
-.images img {
-    width: 400px;
-    height: 300px;
+.cards {
+    border-radius: 30px;
+    transition: transform 0.3s ease;
+    background-color: #1f3f47;
+    padding-bottom: 20px;
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cards img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
     object-fit: cover;
-    border-top-left-radius: 15%;
-    border-top-right-radius: 15%;
-    box-shadow: 30%;
-    gap: 50%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .cards:hover {
-    transform: scale(1.125);
+    transform: scale(1.05);
 }
 
 .cards p {
     padding: 15px;
-    width: 300px;
-    height: 200px;
     font-style: italic;
     font-weight: 500;
     font-size: 16px;
-    display: block;
-    word-wrap: break-word;
-    white-space: normal;
-    display: flex;
-    margin-left: 10%;
     color: #fcedcd;
+    text-align: left;
+    white-space: normal;
+    word-wrap: break-word;
+    max-width: 90%;
+    margin: 0 auto;
 }
 
-.images {
-    display: grid;
-    grid-template-columns: repeat(3, 500px);
-    grid-template-rows: repeat(3, 650px);
-    justify-content: center;
-    text-align: center;
-    margin-top: 100px;
+@media (max-width: 1024px) {
+    .images {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
 
+@media (max-width: 768px) {
+    .meet {
+        font-size: 36px;
+    }
+
+    .images {
+        grid-template-columns: 1fr;
+        margin: 50px 10px;
+        gap: 20px;
+    }
+
+    .cards {
+        max-width: 90%;
+    }
+
+    .cards p {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .chefs {
+        flex-direction: column;
+        gap: 15px;
+    }
 }

@@ -99,3 +99,47 @@ form {
     margin-bottom: 20px;
     margin-top: 40px;
 }
+
+@media (max-width: 768px) {
+    .inputGroup label {
+        font-size: 18px;
+        margin-left: 10%;
+    }
+
+    .inputs {
+        width: 80%;
+        height: 36px;
+    }
+
+    .formsignup1,
+    .formlogin1 {
+        width: 80%;
+        font-size: 16px;
+        height: 38px;
+    }
+
+    .formbtns {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .imgwrapper1 {
+        margin-top: 40px;
+    }
+
+    .imgwrapper1 img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .inputs {
+        width: 60%;
+    }
+
+    .formsignup1,
+    .formlogin1 {
+        width: 60%;
+    }
+}

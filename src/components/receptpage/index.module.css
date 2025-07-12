@@ -37,3 +37,30 @@
     font-weight: 500;
     margin-bottom: 3%;
 }
+
+@media (max-width: 768px) {
+    .foodimg {
+        border-radius: 10%;
+        margin-bottom: 5%;
+        width: 90%;
+        height: auto;
+    }
+
+    h2{
+        font-size: 17px;
+    }
+
+    .category,
+    .area,
+    .ingredients,
+    .instructions1,
+    .instructions {
+        font-size: 18px;
+        margin-left: 1%;
+        padding: 0 10px;
+    }
+
+    .instructions {
+        font-size: 16px;
+    }
+}
