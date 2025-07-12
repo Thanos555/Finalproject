@@ -1,18 +1,28 @@
 import React, { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
 import style from './index.module.css';
 
 const RecipePage = () => {
+    const { id } = useParams(); // получаем id из URL
     const [meal, setMeal] = useState(null);
+    const [error, setError] = useState(null);
 
     useEffect(() => {
-        fetch('https://www.themealdb.com/api/json/v1/1/lookup.php?i=52772')
-            .then(res => res.json())
-            .then(data => setMeal(data.meals[0]));
-    }, []);
+        fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${id}`)
+            .then(res => {
+                if (!res.ok) throw new Error('Ошибка сети');
+                return res.json();
+            })
+            .then(data => setMeal(data.meals[0]))
+            .catch(err => {
+                console.error(err);
+                setError('Не удалось загрузить рецепт.');
+            });
+    }, [id]);
 
+    if (error) return <p>{error}</p>;
     if (!meal) return <p>Loading...</p>;
 
-    // Extract ingredients and measures
     const ingredients = [];
     for (let i = 1; i <= 20; i++) {
         const ingredient = meal[`strIngredient${i}`];
