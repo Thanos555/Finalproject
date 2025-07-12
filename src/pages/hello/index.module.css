@@ -336,9 +336,7 @@ body {
     .headside {
         padding: 15px;
         gap: 20px;
-        /* сохраняем flex-direction: row */
         flex-wrap: wrap;
-        /* чтобы при недостатке места переносило */
         justify-content: center;
     }
 
@@ -391,7 +389,6 @@ body {
         padding: 15px;
         flex-wrap: wrap;
         justify-content: center;
-        /* не меняем flex-direction */
     }
 
     .imgcontainer,
@@ -417,6 +414,7 @@ body {
         margin: 0;
         padding: 20px;
         text-align: center;
+        font-size: small;
     }
 
     .write1 {
@@ -433,9 +431,11 @@ body {
         height: auto;
         margin-top: 30px;
     }
-
+ .mapside h2{
+    font-size: 13px;
+ }
     .mapside p {
-        font-size: 18px;
+        font-size: 10px;
     }
 
     .mapstartbtn,
@@ -450,7 +450,6 @@ body {
         padding: 30px 20px;
         gap: 20px;
         justify-content: center;
-        /* сохраняем flex-direction: row */
     }
 
     .hellofinal h2,
